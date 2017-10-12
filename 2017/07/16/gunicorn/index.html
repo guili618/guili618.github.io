@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="gunicorn安装时候遇到的问题windows7上会要求装vs的套装，h1级标题h2级标题h3级标题h4级标题h5级标题h6级标题分割线：三个以上的短线 即可作出分割线  超链接：连接名称我是链接名 点我刷新 另一种超链接写法：[链接名][链接代号]here然后在别的地方定义 3 这个详细链接信息， 直接展示链接的写法：http://www.izhangbo.cn 键盘键Ctrl+[ and C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2017/07/16/gunicorn/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="gunicorn安装时候遇到的问题windows7上会要求装vs的套装，h1级标题h2级标题h3级标题h4级标题h5级标题h6级标题分割线：三个以上的短线 即可作出分割线  超链接：连接名称我是链接名 点我刷新 另一种超链接写法：[链接名][链接代号]here然后在别的地方定义 3 这个详细链接信息， 直接展示链接的写法：http://www.izhangbo.cn 键盘键Ctrl+[ and C">
+<meta property="og:image" content="http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png">
+<meta property="og:updated_time" content="2017-07-16T12:02:38.128Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="gunicorn安装时候遇到的问题windows7上会要求装vs的套装，h1级标题h2级标题h3级标题h4级标题h5级标题h6级标题分割线：三个以上的短线 即可作出分割线  超链接：连接名称我是链接名 点我刷新 另一种超链接写法：[链接名][链接代号]here然后在别的地方定义 3 这个详细链接信息， 直接展示链接的写法：http://www.izhangbo.cn 键盘键Ctrl+[ and C">
+<meta name="twitter:image" content="http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-gunicorn" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/16/gunicorn/" class="article-date">
+  <time datetime="2017-07-16T11:52:15.498Z" itemprop="datePublished">2017-07-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="gunicorn安装时候遇到的问题"><a href="#gunicorn安装时候遇到的问题" class="headerlink" title="gunicorn安装时候遇到的问题"></a>gunicorn安装时候遇到的问题</h1><h2 id="windows7上会要求装vs的套装，"><a href="#windows7上会要求装vs的套装，" class="headerlink" title="windows7上会要求装vs的套装，"></a>windows7上会要求装vs的套装，</h2><h1 id="h1级标题"><a href="#h1级标题" class="headerlink" title="h1级标题"></a>h1级标题</h1><h2 id="h2级标题"><a href="#h2级标题" class="headerlink" title="h2级标题"></a>h2级标题</h2><h3 id="h3级标题"><a href="#h3级标题" class="headerlink" title="h3级标题"></a>h3级标题</h3><h4 id="h4级标题"><a href="#h4级标题" class="headerlink" title="h4级标题"></a>h4级标题</h4><h5 id="h5级标题"><a href="#h5级标题" class="headerlink" title="h5级标题"></a>h5级标题</h5><h6 id="h6级标题"><a href="#h6级标题" class="headerlink" title="h6级标题"></a>h6级标题</h6><p>分割线：三个以上的短线 即可作出分割线</p>
+<hr>
+<p>超链接：<a href="网址 , 标题">连接名称</a><br><a href="http://www.izhangbo.cn," title="我是标题" target="_blank" rel="external">我是链接名</a><br><a href="/sonfilename/"><i class="icon-refresh"></i> 点我刷新</a></p>
+<p>另一种超链接写法：[链接名][链接代号]<br><a href="http://www.izhangbo.cn" title="聚牛团队" target="_blank" rel="external">here</a><br>然后在别的地方定义 3 这个详细链接信息，</p>
+<p>直接展示链接的写法：<a href="http://www.izhangbo.cn" target="_blank" rel="external">http://www.izhangbo.cn</a></p>
+<p>键盘键<br><kbd>Ctrl+[</kbd> and <kbd>Ctrl+]</kbd></p>
+<p>code格式：反引号<br>Use the <code>printf()</code> function.</p>
+<p><code>There is a literal backtick (`) here.针对在代码区段内插入反引号的情况</code> </p>
+<p>强调：<br><em>斜体强调</em><br><strong>粗体强调</strong></p>
+<p>图片<br><img src="http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png" alt="Alt text" title="Optional title"></p>
+<p>使用 icon 图标文字<br><i class="icon-cog"></i></p>
+<p>段落：以一个空行开始，以一个空行结束，中间的就是一个段落。</p>
+<p>表格：</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>$1</td>
+</tr>
+</tbody>
+</table>
+<p>无序列表：使用 - 加一个空格（）</p>
+<ul>
+<li>无需列表1</li>
+<li>无序列表2</li>
+<li>无序列表3</li>
+</ul>
+<p>有序列表：使用 数字 加一个英文句点</p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<p>换行缩进形成代码区块</p>
+<pre><code>这里先换行，然后缩进4个空格，之后的内容便可以原样显示了，适合用于显示代码内容。直到文本结束或最后一个存在缩进的行为止。    
+</code></pre><p>块引用</p>
+<blockquote>
+<p>给引用的文本开始位置都加一个 ‘&gt;’，<br>便可组成一个块引用。在块引用中，可以结合<br>其他markdown元素一块使用，比如列表。<br><strong>强调</strong><br>也可以只在第一行加大于号，其他位置不加。</p>
+<ul>
+<li>块引用里使用列表，需要和上面的内容隔开一个空行</li>
+<li>记得加空格哦。</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">First Header | Second Header | Third Header|</div><div class="line">:----------- | :-----------: | ----------- |</div><div class="line">Left         | Center        | Right       | </div><div class="line">Left         | Center        | Right       |</div></pre></td></tr></table></figure>
+<h1 id="GitHub-Flavored-Markdown-Editor"><a href="#GitHub-Flavored-Markdown-Editor" class="headerlink" title="(GitHub-Flavored) Markdown Editor"></a>(GitHub-Flavored) Markdown Editor</h1><p>Basic useful feature list:</p>
+<ul>
+<li>Ctrl+S / Cmd+S to save the file</li>
+<li>Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML</li>
+<li>Drag and drop a file into here to load it</li>
+<li>File contents are saved in the URL so you can share files</li>
+</ul>
+<p>I’m no good at writing sample / filler text, so go write something yourself.</p>
+<p>Look, a list!</p>
+<ul>
+<li>foo</li>
+<li>bar</li>
+<li>baz</li>
+</ul>
+<p>And here’s some code! :+1:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="string">'div'</span>).html(<span class="string">'I am a div.'</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">fab</span><span class="params">()</span>:</span></div><div class="line">	<span class="keyword">pass</span></div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> tbase_org</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> class <span class="title">role</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> money; <span class="comment">//买英雄的钱</span></div><div class="line">    <span class="keyword">float</span> height;<span class="comment">// 英雄身高</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>This is <a href="https://github.com/jbt/markdown-editor" target="_blank" rel="external">on GitHub</a> so let me know if I’ve b0rked it somewhere.</p>
+<p>Props to Mr. Doob and his <a href="http://mrdoob.com/projects/code-editor/" target="_blank" rel="external">code editor</a>, from which<br>the inspiration to this, and some handy implementation hints, came.</p>
+<h3 id="Stuff-used-to-make-this"><a href="#Stuff-used-to-make-this" class="headerlink" title="Stuff used to make this:"></a>Stuff used to make this:</h3><ul>
+<li><a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="external">markdown-it</a> for Markdown parsing</li>
+<li><a href="http://codemirror.net/" target="_blank" rel="external">CodeMirror</a> for the awesome syntax-highlighted editor</li>
+<li><a href="http://softwaremaniacs.org/soft/highlight/en/" target="_blank" rel="external">highlight.js</a> for syntax highlighting in output code blocks</li>
+<li><a href="https://github.com/dankogai/js-deflate" target="_blank" rel="external">js-deflate</a> for gzipping of data to make it fit in URLs</li>
+<li><a href="http://172.16.1.72/sc" target="_blank" rel="external">第二课堂内网地址</a>  查询当前学年的学生刷卡以及报表</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/16/gunicorn/" data-id="cj8nri673000334lmi856begx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/07/16/hexo教程/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          hexo教程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/27/杭州市民卡有限公司统一消息系统接入手册/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/16/hexo教程/">hexo教程</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/16/gunicorn/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/16/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
